@@ -43,6 +43,6 @@ jobs:
 
     # Generates an execution plan for Terraform
     - name: Terraform Plan
-      run: terraform plan
+      Run terraform plan -input=false
       working-directory: ${{env.ROOT_PATH}}
       
