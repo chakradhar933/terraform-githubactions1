@@ -45,4 +45,5 @@ jobs:
     - name: Terraform Plan
       Run terraform plan -input=false
       working-directory: ${{env.ROOT_PATH}}
+      ROOT_PATH:'${{ github.workspace }}../../src/terraform'
       
